@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C and P Trucking</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1>C and P Trucking LLC</h1>
+            <p>270-240-1533</p>
+        </div>
+        <button class="toggle-button" onclick="toggleMenu()">Menu</button>
+        <ul>
+            <li><a href="#section1">Home</a></li>
+            <li><a href="#section2">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#section4">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="section1" class="section banner">
+            <img src="images/292403017_441794047952862_8224424393748727557_n.jpg" alt="Banner Image" class="banner-image">
+        </section>        
+        
+        <section id="services" class="section">
+            <h2>Services</h2>
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="/images/C and P Trucking Hauling Photo.webp" alt="Image 1">
+                    <p>Expert Service</p>
+                </div>
+                <div class="image-item">
+                    <img src="/images/Cand P Trucking Hauling Photo 2.webp" alt="Image 2">
+                    <p>Always Prepared</p>
+                </div>
+                <div class="image-item">
+                    <img src="/images/Owners of C and P Trucking.webp" alt="Image 3">
+                    <p>Attention to detail</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- New About Section -->
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>
+                Over the years, we’ve learned that great service begins and ends with experienced and friendly 
+                professionals. We believe that our team is the best in the business, and have complete and total 
+                confidence in every person providing our services.</p>
+            <p>
+                C and P Trucking LLC finishes each project on schedule and with the highest level of quality. With a 
+                focus on personalized service, competitive rates and customer satisfaction, we’re always striving 
+                to meet and exceed expectations.
+            </p>
+        </section>
+        
+        <section id="section3" class="section">
+            <h2>Our Location</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3201.0018030785663!2d-87.106581!3d37.771816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886e24fdf369030b%3A0xa29a32c7480b1bc2!2s1515%20E%209th%20St%2C%20Owensboro%2C%20KY%2042303%2C%20USA!5e0!3m2!1sen!2sus!4v1698154614887!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+              
+       
+        <section id="section4" class="section">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 C and P Trucking. All rights reserved.
+        <a href="https://www.facebook.com/candptrucking" target="_blank" class="social-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="24" height="24">
+        </a></p>
+    </footer>
+    
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
