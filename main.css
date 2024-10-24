@@ -16,6 +16,8 @@ body {
     align-items: center;
     background-color: #124559; /* Dark Blue */
     padding: 10px 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .logo {
