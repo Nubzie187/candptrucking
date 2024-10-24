@@ -87,6 +87,8 @@ body {
     font-size: 24px;
     text-align: center;
     transition: transform 0.3s, background-color 0.3s; /* Smooth transitions */
+    max-width: 1200px;
+    margin: auto;
 }
 
 .dbe:hover {
