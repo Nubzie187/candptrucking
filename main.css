@@ -78,16 +78,20 @@ body {
 }
 
 .dbe {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-weight: 800;
-    height: 50px;
-    font-size: 28px;
-    margin-top: 10px;
-    color: rgb(255, 0, 0);
-    font-style: italic;
+    background-color: #ff0000; /* Bright color */
+    color: #FFFFFF; /* Contrasting text color */
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    font-size: 24px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transitions */
+}
+
+.dbe:hover {
+    background-color: #ff0000; /* Lighter color on hover */
+    transform: scale(1.10); /* Slightly increase size */
 }
 
 /* Section Styles */
