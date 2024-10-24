@@ -32,7 +32,7 @@ body {
 .logo p {
     margin: 5px 0 0;
     font-size: 18px; /* Standard paragraph size */
-    font-weight: 800;;
+    font-weight: 800;
 }
 
 /* Navigation */
@@ -47,11 +47,19 @@ body {
     margin: 0 15px;
 }
 
+/* Navigation Link Styles */
 .navbar a {
     color: #eff6e0; /* Very Light Blue text */
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
+    padding: 10px 15px; /* Add some padding for a better hover effect */
+    border-radius: 4px; /* Rounded corners for the background */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar a:hover {
+    background-color: #598392; /* Mid Blue background on hover */
 }
 
 .toggle-button {
@@ -61,20 +69,6 @@ body {
     color: #eff6e0;
     padding: 10px;
     cursor: pointer;
-}
-
-/* Contact Link Styles */
-.navbar a[href="#section4"] {
-    background-color: #598392; /* Mid Blue */
-    color: #eff6e0; /* Very Light Blue text */
-    padding: 10px 15px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.navbar a[href="#section4"]:hover {
-    background-color: #aec3b0; /* Lighter Blue on hover */
-    color: #01161e; /* Darkest Blue for text on hover */
 }
 
 .dbe {
@@ -227,6 +221,10 @@ button:hover {
     .image-item {
         flex: 1 1 100%; /* Make each image take up the full width */
         max-width: 100%;
+    }
+
+    .navbar a:hover {
+        background-color: transparent; /* Remove background color on hover */
     }
 }
 
